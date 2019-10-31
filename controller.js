@@ -13,6 +13,7 @@ exports.findUsers = function(req, res) {
     function (error, rows, fields){
         if(error){
             console.log(error)
+			response.status(404).send('404 Invalid Request');
         } else{
             response.ok(rows, res)
         }

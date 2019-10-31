@@ -1,10 +1,11 @@
 {
-  "name": "nodesample",
+  "name": "sampleapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "create restful api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +13,19 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mysql": "^2.17.1"
-  }
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2",
+    "supertest": "^4.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moniko11/js-restful-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moniko11/js-restful-api/issues"
+  },
+  "homepage": "https://github.com/moniko11/js-restful-api#readme"
 }
